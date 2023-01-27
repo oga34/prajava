@@ -4,6 +4,7 @@ public class Main {
         System.out.print("[0]グー,[1]チョキ,[2]パーの中から番号で選択してください:");
         String[] number = {"グー","チョキ","パー"};
         int n = new java.util.Scanner(System.in).nextInt();
+        System.out.println("あなたの選んだ手は" + number[n]);
         int c = new java.util.Random().nextInt(3);
         if (n == c) {
             System.out.println("コンピューターの手は" + number[c]);
